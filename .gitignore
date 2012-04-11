@@ -4,6 +4,8 @@ tmp/**/*
 tmp
 config/database.yml
 config/enki.yml
+config/unicorn.rb
+config/deploy.rb
 db/schema.rb
 .bundle
 *.log
