@@ -1,8 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    RedCloth (4.2.9)
-    RedCloth (4.2.9-java)
     aaronh-chronic (0.3.9)
     actionmailer (3.2.1)
       actionpack (= 3.2.1)
@@ -150,6 +148,7 @@ GEM
     rake (0.9.2.2)
     rdoc (3.12)
       json (~> 1.4)
+    redcarpet (2.1.1)
     rspec (2.8.0)
       rspec-core (~> 2.8.0)
       rspec-expectations (~> 2.8.0)
@@ -210,7 +209,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  RedCloth (~> 4.2.9)
   aaronh-chronic
   activerecord-jdbcsqlite3-adapter
   coderay
@@ -229,6 +227,7 @@ DEPENDENCIES
   open_id_authentication
   rack-openid
   rails (= 3.2.1)
+  redcarpet
   rspec
   rspec-rails
   ruby-openid

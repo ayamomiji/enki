@@ -236,7 +236,7 @@ describe Post, '.build_for_preview' do
   end
 
   it 'applies filter to body' do
-    @post.body_html.should == '<p>body</p>'
+    @post.body_html.should == EnkiFormatter.format_as_xhtml('body')
   end
 
   it 'generates tags from tag_list' do
