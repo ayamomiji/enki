@@ -13,6 +13,10 @@
  *= require humanmsg
  */
 
+#page {
+  margin-bottom: 25px;
+}
+
 #nav {
   position: absolute;
   width: 100%;
@@ -123,11 +127,11 @@ body {
 }
 
 #recent-comments ul ul li:after {
-	content: ", ";
+  content: ", ";
 }
 
 #recent-comments ul ul li.last:after {
-	content: "";
+  content: "";
 }
 
 #recent-comments .count {
