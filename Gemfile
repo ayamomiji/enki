@@ -58,6 +58,7 @@ group :test do
   gem 'rspec'
   gem 'nokogiri', '~> 1.5.0'
   gem 'webrat'
+  gem 'guard-rspec'
 end
 
 group :development, :test do
