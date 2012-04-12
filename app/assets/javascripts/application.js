@@ -14,4 +14,8 @@
 //= require jquery_ujs
 //= require common
 //= require live-comment-preview
+//= require highlight
+//= require_tree ./highlight
 //= require_self
+
+hljs.initHighlightingOnLoad();

@@ -3,13 +3,10 @@ class EnkiFormatter
     HTML = Redcarpet::Render::HTML.new(hard_wrap: true)
     RENDERER = Redcarpet::Markdown.new(HTML, no_intra_emphasis: true,
                                              tables: true,
-                                             strikethrough: true)
+                                             strikethrough: true,
+                                             fenced_code_blocks: true)
     def format_as_xhtml(text)
-      Lesstile.format_as_xhtml(
-        text,
-        :text_formatter => lambda {|text| RENDERER.render(text)},
-        :code_formatter => Lesstile::CodeRayFormatter
-      )
+      RENDERER.render(text)
     end
   end
 end

@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require highlight
  */
 
 /* High level containers */
@@ -28,15 +29,15 @@ body
   min-height: 400px;
 
   color: black;
-	width: 100%;
+  width: 100%;
 }
 
 #content {
-	width: 900px;
+  width: 900px;
   margin: 5px auto;
-	position: relative;
-	padding-right: 55px;
-/*	display: inline;*/
+  position: relative;
+  padding-right: 55px;
+/*  display: inline;*/
 }
 
 #footer
@@ -55,7 +56,7 @@ body
 h1#page_heading
 {
   font-size: 24pt;
-	color: #000 !important;
+  color: #000 !important;
 }
 
 h2
@@ -170,7 +171,7 @@ img
 {
   border: solid 1px black;
   width: 100%;
-	margin-left: 10px;
+  margin-left: 10px;
 }
 
 #navigation form
@@ -201,7 +202,7 @@ div.meta
   padding-bottom: 0.5em;
   display: inline;
   color: #cccccc;
-	font-size: 9pt;
+  font-size: 9pt;
 }
 .archive-month .tags
 {
@@ -279,8 +280,8 @@ textarea
 
 div.date
 {
-	color: #999;
-	font-size: .8em;
+  color: #999;
+  font-size: .8em;
 }
 
 div.comments div.body
